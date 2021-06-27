@@ -1,24 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import {Calculator, Calculator2} from './Calculator';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="App-fixed"><p>Just an example of what Reactjs can do.  A demo UI app.</p></div>
+      <h1>Would the Water Boil?</h1>
+      <Calculator />
+      <p>Same Component, but with Temperature choice, synchronized by Lifting State up to Calculator2 Component</p>
+      <Calculator2 />
+      
+      </div>
+    
   );
 }
 
